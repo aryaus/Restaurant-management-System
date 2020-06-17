@@ -4,6 +4,12 @@
  * and open the template in the editor.
  */
 package rms;
+import java.awt.Component;
+import javax.swing.JTextField;
+import java.awt.TextField;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
+import javax.swing.UnsupportedLookAndFeelException
 
 /**
  *
@@ -38,11 +44,11 @@ public class OO_Restaurant extends javax.swing.JFrame {
         jlblTax10 = new javax.swing.JLabel();
         jlblTax11 = new javax.swing.JLabel();
         jlblTax12 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
+        jtxtFiletOFish = new javax.swing.JTextField();
+        jtxtChickenBurger = new javax.swing.JTextField();
+        jtxtChickenBurgerM = new javax.swing.JTextField();
+        jtxtChilliCheeseBurgerM = new javax.swing.JTextField();
+        jtxtBaconAndCheeseBurger = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jlblTax1 = new javax.swing.JLabel();
         jlblTax2 = new javax.swing.JLabel();
@@ -50,27 +56,33 @@ public class OO_Restaurant extends javax.swing.JFrame {
         jlblTax4 = new javax.swing.JLabel();
         jlblTax5 = new javax.swing.JLabel();
         jlblTax6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        jtxtMilkShake = new javax.swing.JTextField();
+        jtxtVanillaCone = new javax.swing.JTextField();
+        jtxtVanMilkShake = new javax.swing.JTextField();
+        jtxtClasVanilla = new javax.swing.JTextField();
+        jtxtChocMilkShake = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jtxtReceipt = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jbtnTotal = new javax.swing.JButton();
+        jbtnReceipt = new javax.swing.JButton();
+        jbtnReset = new javax.swing.JButton();
+        jbtnExit = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
+        jlblTax13 = new javax.swing.JLabel();
+        jlblTax14 = new javax.swing.JLabel();
+        jlblTax15 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jlblSubTotal = new javax.swing.JLabel();
         jlblTax = new javax.swing.JLabel();
         jlblTotal = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jtxtTax = new javax.swing.JTextField();
+        jtxtTotal = new javax.swing.JTextField();
+        jtxtSubTotal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,12 +173,12 @@ public class OO_Restaurant extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jlblTax12)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jtxtFiletOFish, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                    .addComponent(jtxtChickenBurger, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtxtChickenBurgerM, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtxtChilliCheeseBurgerM, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtxtBaconAndCheeseBurger, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(46, 46, 46))
         );
         jPanel4Layout.setVerticalGroup(
@@ -177,24 +189,24 @@ public class OO_Restaurant extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlblTax9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtFiletOFish, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jlblTax8)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtxtChickenBurger, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(33, 33, 33)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jlblTax10)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtxtChickenBurgerM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(36, 36, 36)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jlblTax11)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtxtChilliCheeseBurgerM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(33, 33, 33)
                         .addComponent(jlblTax12))
-                    .addComponent(jTextField13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtBaconAndCheeseBurger, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -213,54 +225,54 @@ public class OO_Restaurant extends javax.swing.JFrame {
         jlblTax4.setText("Classic Vanilla");
 
         jlblTax5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jlblTax5.setText("Classic Vanilla");
+        jlblTax5.setText("Vanilla Milk Shake");
 
         jlblTax6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jlblTax6.setText("Classic Vanilla");
+        jlblTax6.setText("Chocolate Milk Shake");
 
-        jTextField5.setText("jTextField1");
-
-        jTextField6.setText("jTextField1");
-
-        jTextField7.setText("jTextField1");
-
-        jTextField8.setText("jTextField1");
+        jtxtVanMilkShake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtVanMilkShakeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlblTax2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                .addComponent(jlblTax6)
+                                .addGap(97, 97, 97))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jlblTax5, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+                                        .addGap(170, 170, 170)
+                                        .addComponent(jlblTax1)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtxtVanMilkShake, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtxtChocMilkShake, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlblTax4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlblTax6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlblTax5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                        .addGap(185, 185, 185)
-                        .addComponent(jlblTax1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlblTax3)
-                        .addGap(208, 208, 208)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jlblTax4)
+                                    .addComponent(jlblTax2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jlblTax3)
+                                .addGap(192, 192, 192)))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jtxtMilkShake)
+                            .addComponent(jtxtVanillaCone)
+                            .addComponent(jtxtClasVanilla, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))))
                 .addGap(51, 51, 51))
         );
         jPanel5Layout.setVerticalGroup(
@@ -273,30 +285,30 @@ public class OO_Restaurant extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jlblTax3)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtxtMilkShake, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(33, 33, 33)
                         .addComponent(jlblTax2))
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtVanillaCone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlblTax4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtClasVanilla, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlblTax5)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtVanMilkShake, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlblTax6)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtChocMilkShake, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 204), 12));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jtxtReceipt.setColumns(20);
+        jtxtReceipt.setRows(5);
+        jScrollPane1.setViewportView(jtxtReceipt);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -311,19 +323,39 @@ public class OO_Restaurant extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addComponent(jScrollPane1)
+                .addContainerGap())
         );
 
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 204), 12));
 
-        jButton1.setText("Total");
+        jbtnTotal.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jbtnTotal.setText("Total");
+        jbtnTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnTotalActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Receipe");
+        jbtnReceipt.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jbtnReceipt.setText("Receipt");
+        jbtnReceipt.setActionCommand("Receipt");
 
-        jButton3.setText("Reset");
+        jbtnReset.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jbtnReset.setText("Reset");
+        jbtnReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnResetActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("Exit");
+        jbtnExit.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jbtnExit.setText("Exit");
+        jbtnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -331,38 +363,74 @@ public class OO_Restaurant extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(jButton1)
-                .addGap(135, 135, 135)
-                .addComponent(jButton2)
-                .addGap(110, 110, 110)
-                .addComponent(jButton3)
-                .addGap(142, 142, 142)
-                .addComponent(jButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jbtnTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(jbtnReceipt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(jbtnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(jbtnTotal)
+                    .addComponent(jbtnReceipt)
+                    .addComponent(jbtnReset)
+                    .addComponent(jbtnExit))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 204), 12));
 
+        jlblTax13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jlblTax13.setText("Cost of Meals");
+
+        jlblTax14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jlblTax14.setText("Cost of Drinks");
+
+        jlblTax15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jlblTax15.setText("Total Cost");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlblTax13)
+                    .addComponent(jlblTax15)
+                    .addComponent(jlblTax14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jTextField14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(jTextField15)
+                    .addComponent(jTextField16))
+                .addGap(46, 46, 46))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jlblTax13))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlblTax14)
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlblTax15)
+                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 204), 12));
@@ -387,11 +455,11 @@ public class OO_Restaurant extends javax.swing.JFrame {
                     .addComponent(jlblTotal)
                     .addComponent(jlblSubTotal))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45))
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jtxtSubTotal, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                    .addComponent(jtxtTax)
+                    .addComponent(jtxtTotal))
+                .addGap(53, 53, 53))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -399,14 +467,14 @@ public class OO_Restaurant extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlblTax)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                    .addComponent(jtxtTax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtxtSubTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jlblSubTotal))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtxtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jlblTotal))
                 .addContainerGap())
         );
@@ -450,22 +518,99 @@ public class OO_Restaurant extends javax.swing.JFrame {
                             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jtxtVanMilkShakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtVanMilkShakeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtVanMilkShakeActionPerformed
+
+    private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
+         
+        SubClass_Child iExit = new SubClass_Child();
+        
+        iExit.iExitSystem();
+    }//GEN-LAST:event_jbtnExitActionPerformed
+
+    private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
+         JTextField clearText = null;
+         for (Component c:jPanel5.getComponents()){
+             if(c.getClass().toString().contains("javax.swing.JTextField")){
+                 clearText = (JTextField)c;
+                 clearText.setText("0");
+             }
+         }
+         
+         for (Component c:jPanel4.getComponents()){
+             if(c.getClass().toString().contains("javax.swing.JTextField")){
+                 clearText = (JTextField)c;
+                 clearText.setText("0");
+             }
+         }
+         
+         for (Component c:jPanel6.getComponents()){
+             if(c.getClass().toString().contains("javax.swing.JTextField")){
+                 clearText = (JTextField)c;
+                 clearText.setText("");
+             }
+         }
+         
+         for (Component c:jPanel9.getComponents()){
+             if(c.getClass().toString().contains("javax.swing.JTextField")){
+                 clearText = (JTextField)c;
+                 clearText.setText("");
+             }
+         }
+         
+         jtxtReceipt.setText(null);
+        
+    }//GEN-LAST:event_jbtnResetActionPerformed
+
+    private void jbtnTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnTotalActionPerformed
+        SubClass_Child itemCost  = new SubClass_Child();
+        
+        double iTotal, iTax, iSubTotal;
+        
+        itemCost.FiletOFish = itemCost.pFiletOFish * Double.parseDouble(jtxtFiletOFish.getText());
+        itemCost.ChickenBurger = itemCost.pChickenBurger * Double.parseDouble(jtxtChickenBurger.getText());
+        itemCost.ChickenBurgerM = itemCost.pChickenBurgerM * Double.parseDouble(jtxtChickenBurgerM.getText());
+        itemCost.ChilliCheeseBurgerM = itemCost.pChilliCheeseBurgerM * Double.parseDouble(jtxtChilliCheeseBurgerM.getText());
+        itemCost.BaconAndCheeseBurger = itemCost.pBaconAndCheeseBurger * Double.parseDouble(jtxtBaconAndCheeseBurger.getText());
+        
+        itemCost.MilkShake = itemCost.pMilkShake * Double.parseDouble(jtxtMilkShake.getText());
+        itemCost.VanillaCone = itemCost.pVanillaCone * Double.parseDouble(jtxtVanillaCone.getText());
+        itemCost.ClasVanilla = itemCost.pClasVanilla * Double.parseDouble(jtxtClasVanilla.getText());
+        itemCost.VanMilkShake = itemCost.pVanMilkShake * Double.parseDouble(jtxtVanMilkShake.getText());
+        itemCost.ChocMilkShake = itemCost.pChocMilkShake * Double.parseDouble(jtxtChocMilkShake.getText());
+        
+        iSubTotal = itemCost.GetAmount();
+        iTax = itemCost.cFindTax(iSubTotal);
+        iTotal = iSubTotal + iTax;
+        
+        String SubTotal = String.format("EUR %.2f",iSubTotal);
+        jtxtSubTotal.setText(SubTotal);
+        
+        String Tax = String.format("EUR %.2f",iTax);
+        jtxtTax.setText(Tax);
+        
+        String Total = String.format("EUR %.2f",iTotal);
+        jtxtTotal.setText(Total);
+        
+    }//GEN-LAST:event_jbtnTotalActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -489,6 +634,7 @@ public class OO_Restaurant extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -498,10 +644,6 @@ public class OO_Restaurant extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -513,26 +655,22 @@ public class OO_Restaurant extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JButton jbtnExit;
+    private javax.swing.JButton jbtnReceipt;
+    private javax.swing.JButton jbtnReset;
+    private javax.swing.JButton jbtnTotal;
     private javax.swing.JLabel jlblSubTotal;
     private javax.swing.JLabel jlblTax;
     private javax.swing.JLabel jlblTax1;
     private javax.swing.JLabel jlblTax10;
     private javax.swing.JLabel jlblTax11;
     private javax.swing.JLabel jlblTax12;
+    private javax.swing.JLabel jlblTax13;
+    private javax.swing.JLabel jlblTax14;
+    private javax.swing.JLabel jlblTax15;
     private javax.swing.JLabel jlblTax2;
     private javax.swing.JLabel jlblTax3;
     private javax.swing.JLabel jlblTax4;
@@ -542,5 +680,19 @@ public class OO_Restaurant extends javax.swing.JFrame {
     private javax.swing.JLabel jlblTax8;
     private javax.swing.JLabel jlblTax9;
     private javax.swing.JLabel jlblTotal;
+    private javax.swing.JTextField jtxtBaconAndCheeseBurger;
+    private javax.swing.JTextField jtxtChickenBurger;
+    private javax.swing.JTextField jtxtChickenBurgerM;
+    private javax.swing.JTextField jtxtChilliCheeseBurgerM;
+    private javax.swing.JTextField jtxtChocMilkShake;
+    private javax.swing.JTextField jtxtClasVanilla;
+    private javax.swing.JTextField jtxtFiletOFish;
+    private javax.swing.JTextField jtxtMilkShake;
+    private javax.swing.JTextArea jtxtReceipt;
+    private javax.swing.JTextField jtxtSubTotal;
+    private javax.swing.JTextField jtxtTax;
+    private javax.swing.JTextField jtxtTotal;
+    private javax.swing.JTextField jtxtVanMilkShake;
+    private javax.swing.JTextField jtxtVanillaCone;
     // End of variables declaration//GEN-END:variables
 }
